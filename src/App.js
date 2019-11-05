@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Route } from 'react-router-dom'
+import RecipePage from './RecipePage'
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Under construction.</h1>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <div className='App'>
+        <Switch>
+          <Route path='/recipes/:recipeId' component={RecipePage} />
+        </Switch>
+      </div>
+    )
+  }
 }
 
 export default App;
