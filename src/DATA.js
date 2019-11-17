@@ -4,7 +4,10 @@ const recipes = [
     name: `Spring Asparagus Pancetta Hash`,
     time: `1 hour`,
     servings: 4,
-    source: `<a href='https://smittenkitchen.com/2010/05/spring-asparagus-pancetta-hash/'>Smitten Kitchen</a>`,
+    source: {
+      text: `Smitten Kitchen`,
+      link: `https://smittenkitchen.com/2010/05/spring-asparagus-pancetta-hash/`,
+    },
     ingredients: [
       {
         amount: 0.25,
@@ -57,7 +60,10 @@ const recipes = [
     name: `Lentils With Pancetta and Cream`,
     time: `1 hour`,
     servings: 4,
-    source: `<a href='https://cooking.nytimes.com/recipes/11881-lentils-with-pancetta-and-cream'>NYT Cooking</a>`,
+    source: {
+      text: `NYT Cooking`,
+      link: `https://cooking.nytimes.com/recipes/11881-lentils-with-pancetta-and-cream`,
+    },
     ingredients: [
       {
         amount: 1,

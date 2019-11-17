@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom'
-import RecipePage from './RecipePage'
+import RecipePage from './RecipePage/RecipePage'
 
 export default class App extends Component {
   render() {
     return (
       <div className='App'>
-        <Switch>
+        {/* <Switch>
           <Route path='/recipes/:recipeId' component={RecipePage} />
-        </Switch>
+        </Switch> */}
+        <RecipePage />
       </div>
     )
   }
 }
-
-export default App;
