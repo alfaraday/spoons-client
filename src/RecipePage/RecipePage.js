@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import Nav from '../Nav/Nav';
-// import Step from '..Step/Step';
-// import Tag from '..Tag/Tag';
 import recipes from '../DATA'
 
 export default class RecipePage extends Component {
   render() {
+    // replace with API call
     const recipe = recipes[0];
 
     const ingredients = recipe.ingredients.map( ingredient => {
