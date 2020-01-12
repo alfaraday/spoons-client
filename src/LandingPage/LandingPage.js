@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Nav from '../Nav/Nav';
 import SearchBox from '../SearchBox/SearchBox'
-import Tag from '../Tag/Tag'
+import Tag from '../Tags/Tags'
 
 export default class LandingPage extends Component {
   render() {
