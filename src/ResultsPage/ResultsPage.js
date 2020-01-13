@@ -15,6 +15,7 @@ export default class ResultsPage extends Component {
         <li>
           <h2>{recipe.name}</h2>
           <p>Cooking time: {recipe.time}</p>
+          {/* Add props to Tags */}
           <Tags />
         </li>
       );
