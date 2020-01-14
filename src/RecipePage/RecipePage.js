@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Nav from '../Nav/Nav';
 import recipes from '../DATA'
+import Tags from '../Tags/Tags';
 
 export default class RecipePage extends Component {
   render() {
@@ -50,9 +51,7 @@ export default class RecipePage extends Component {
           <div className='tags-notes'>
             <div className='tags'>
               <h2>Tags</h2>
-              <ul>
-                { tags }
-              </ul>
+              <Tags tagsData={recipe.tags} />
             </div>
             <div className='notes'>
               <h2>Notes</h2>
