@@ -14,7 +14,7 @@ export default class LandingPage extends Component {
             <p>Trouble deciding what to eat? Save your spoons for bigger problems! Collect all your favorite recipes here and never struggle over food decisions again.</p>
           </div>
           <SearchBox />
-          <Tags />
+          <Tags tagsData={['breakfast', 'dinner', 'easy']} />
         </main>
       </div>
     )

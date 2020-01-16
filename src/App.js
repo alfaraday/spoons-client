@@ -11,7 +11,7 @@ export default class App extends Component {
         {/* <Switch>
           <Route path='/recipes/:recipeId' component={RecipePage} />
         </Switch> */}
-        <RecipePage />
+        <LandingPage />
       </div>
     )
   }
