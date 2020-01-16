@@ -8,10 +8,18 @@ export default class App extends Component {
   render() {
     return (
       <div className='App'>
-        {/* <Switch>
-          <Route path='/recipes/:recipeId' component={RecipePage} />
-        </Switch> */}
-        <LandingPage />
+          <Route 
+            exact path='/'
+            component={LandingPage}
+          />
+          <Route 
+            path='/results'
+            component={ResultsPage}
+          />
+          <Route 
+            path='/recipes/:recipeId' 
+            component={RecipePage} 
+          />
       </div>
     )
   }

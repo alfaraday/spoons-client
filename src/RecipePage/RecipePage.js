@@ -6,7 +6,9 @@ import Tags from '../Tags/Tags';
 export default class RecipePage extends Component {
   render() {
     // replace with API call
-    const recipe = recipes[0];
+    const recipe = recipes.find(r => 
+        r.id == this.props.match.params.recipeId
+      );
 
     const ingredients = recipe.ingredients.map( ingredient => {
       return <li>{ingredient.amount} {ingredient.units} {ingredient.namePrep}</li>;
