@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export default class Nav extends Component {
   render() {
@@ -7,7 +8,9 @@ export default class Nav extends Component {
         {/* add images */}
         <li>SPOONS</li>
         <li>+</li>
-        <li>Home</li> 
+        <li>
+          <Link to='/'>Home</Link>
+        </li> 
       </ul>
     </nav>
   }
